@@ -1,0 +1,26 @@
+INFO 17:43:39,652 root INFO Hostname Set
+INFO 17:43:44,658 root INFO ran step1
+DEBUG 17:45:30,992 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:45:48,605 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 500 4384
+INFO 17:45:48,618 root INFO not needed
+DEBUG 17:49:30,390 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:49:30,448 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:49:30,449 root INFO not needed
+DEBUG 17:49:49,410 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:49:49,444 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:49:49,445 root INFO not needed
+DEBUG 17:50:38,92 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:50:38,284 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:50:38,285 root INFO not needed
+DEBUG 17:53:49,939 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:53:49,993 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:53:49,994 root INFO not needed
+DEBUG 17:55:10,53 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:55:10,103 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:55:10,104 root INFO not needed
+DEBUG 17:55:36,673 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:55:36,718 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings/license.json HTTP/1.1" 404 13
+INFO 17:55:36,720 root INFO not needed
+DEBUG 17:56:15,308 urllib3.connectionpool DEBUG Starting new HTTP connection (1): localhost:80
+DEBUG 17:56:16,817 urllib3.connectionpool DEBUG http://localhost:80 "PUT /settings.json HTTP/1.1" 204 0
+INFO 17:56:16,818 root INFO not needed

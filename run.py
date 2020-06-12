@@ -7,6 +7,7 @@ import fileinput
 import shlex
 import time
 import logging
+import requests
 
 
 # Added Logging
@@ -85,6 +86,18 @@ def reinstall_rabbitmq():
     run.wait()
     return logging.info("Re-installed Rabbit-MQ")
 
+def runApi(onapp_props):
+    r = requests.Session()
+    r.headers = {
+        'Accept' : 'application/json',
+        'Content-type' : 'application/json'
+    }
+    r.auth = 'admin','changeme'
+    url = 'http://localhost/settings.json'
+    license_key = onapp_props['license_key']
+    payload = {"configuration":{"isolated_license":"true","license_key": license_key}}
+    data = r.put(url, json=payload)
+    return data.headers
 
 # props = xmlparser()
 # print(props)
@@ -109,6 +122,9 @@ if (os.path.isfile('step-1') == 0) and (os.path.isfile('step-2') == 0) :
 
     onapp_props = createOnAppProps(xmlparser())
     print(onapp_props)    
+    print(runApi(onapp_props))
+
+
     os.system('touch step-1')
 
     changer(net_props,"/etc/sysconfig/network-scripts/ifcfg-ens160")
